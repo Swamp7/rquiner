@@ -4,6 +4,8 @@ RUN rm /etc/apt/sources.list.d/cuda.list
 
 RUN apt update \ 
     && apt -y install wget \
+    && apt -y install libc6 \
+    && apt -y install g++-11 \
     && wget https://downloads.viporlab.net/files/rqiner-x86-cuda-0.3.22.2.tar.gz \
     && tar xvzf rqiner-x86-cuda-0.3.22.2.tar.gz \
     && rm rqiner-x86-cuda-0.3.22.2.tar.gz
