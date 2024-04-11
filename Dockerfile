@@ -7,9 +7,9 @@ RUN echo "deb http://cz.archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/source
     && apt -y install wget \
     && apt -y install libc6 \
     && apt install -y g++-11 \
-    && wget https://downloads.viporlab.net/files/rqiner-x86-0.4.0.2.tar.gz \
-    && tar xvzf rqiner-x86-cuda-0.4.0.2.tar.gz \
-    && rm rqiner-x86-cuda-0.4.0.2.tar.gz
+    && wget https://downloads.viporlab.net/files/rqiner-x86-cuda-0.3.22.2.tar.gz \
+    && tar xvzf rqiner-x86-cuda-0.3.22.2.tar.gz \
+    && rm rqiner-x86-cuda-0.3.22.2.tar.gz
 
 WORKDIR /rqiner-x86-cuda
 
